@@ -1,44 +1,15 @@
+/* 共通 */
 .c-section {
     position: relative;
     height: 100vh;
     width: 100%;
 }
 
-.c-box {
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 98vh;
-    max-width: 95%;;
-    padding: 0 1rem;
-    width: 100%;
-
-    /* Vertical and horizontal center alignment */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
 .c-grid__answer {
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
     height: 28vh;
-}
-
-.p-chat__bubble {
-    background: #41B6E6;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 1.5vh;
-    font-weight: 500;
-    padding: .5rem;
-    margin-right: 1rem;
-    max-width: 80%;
-    width: auto;
 }
 
 .p-chat__row {
@@ -65,4 +36,101 @@
     font-size: 1rem;
     letter-spacing: .125rem;
     line-height: 1.7;
+}
+
+
+/* pc */
+@media screen and (min-width: 1026px) {
+    .p-chat__bubble {
+        background: #41B6E6;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 3vh;
+        font-weight: 500;
+        padding: .5rem;
+        margin-right: 1rem;
+        max-width: 80%;
+        width: auto;
+    }
+
+    .c-box {
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 4px;
+        box-sizing: border-box;
+        height: 98vh;
+        max-width: 700px;
+        padding: 0 1rem;
+        width: 100%;
+    
+        /* Vertical and horizontal center alignment */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* タブレット */
+@media screen and (min-width: 482px) and (max-width: 1025px) {
+    .p-chat__bubble {
+        background: #41B6E6;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 3vh;
+        font-weight: 500;
+        padding: .5rem;
+        margin-right: 1rem;
+        max-width: 80%;
+        width: auto;
+    }
+
+    .c-box {
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 4px;
+        box-sizing: border-box;
+        height: 98vh;
+        max-width: 95%;
+        padding: 0 1rem;
+        width: 100%;
+
+        /* Vertical and horizontal center alignment */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 481px) {
+    .p-chat__bubble {
+        background: #41B6E6;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 2.5vh;
+        font-weight: 500;
+        padding: .5rem;
+        margin-right: 1rem;
+        max-width: 80%;
+        width: auto;
+    }
+
+    .c-box {
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 4px;
+        box-sizing: border-box;
+        height: 98vh;
+        max-width: 100%;
+        padding: 0 1rem;
+        width: 95%;
+
+        /* Vertical and horizontal center alignment */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
